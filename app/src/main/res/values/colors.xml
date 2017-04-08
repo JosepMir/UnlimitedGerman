@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Akk">#fff27073</color>
+    <color name="Dat">#ff9ab0f1</color>
+    <color name="Gen">#63ce7e</color>
+
+
+    <color name="brown">#CC8E55</color>
+    <color name="orange">#FFA20F</color>
+    <color name="blue">#0046FF</color>
+    <color name="lila">#553D99</color>
+    <color name="violet">#4414CC</color>
+
+    <color name="frenchred">#E74C3C</color>
+
+
+    <color name="content_background">#ECF0F1</color>
+</resources>

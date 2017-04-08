@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:animateLayoutChanges="true"
+    android:background="@color/content_background"
+    tools:context="com.josepmir.germanincontext.MainActivity$PlaceholderFragment"
+    android:id="@+id/linearlayoutZahlen">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:id="@+id/zahlenTableLayout"
+        android:layout_marginTop="6dp">
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/firstrow">
+
+            <Button
+                android:background="@drawable/round_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Repeat"
+                android:id="@+id/zahlenBtnRepeat"
+                 />
+
+
+            <Button
+                android:background="@drawable/round_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Solution"
+                android:id="@+id/zahlenBtnShowSolution"
+             />
+
+            <Button
+                android:background="@drawable/round_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="  New  "
+                android:id="@+id/zahlenBtnGenerateNewNumber"
+              />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            >
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="45"
+                android:id="@+id/zahlenEditTextNumber"
+                android:textSize="60sp"
+                android:textIsSelectable="false"
+                android:text=""
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:numeric="integer"
+                android:focusable="true"
+                android:layout_span="3"
+                android:fontFamily="tahoma"
+                android:textColor="#111"
+                android:gravity="center"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Schwierigkeit: "
+                android:id="@+id/zahlenTextSchwierigkeit"
+                android:layout_alignBottom="@+id/numberSize"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"
+                android:textColor="#000"
+                />
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/zahlenSeekSchwierigkeit"
+                android:longClickable="false"
+                android:layout_below="@+id/btnShowSolution"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_span="2"/>
+
+            </TableRow>
+    </TableLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+

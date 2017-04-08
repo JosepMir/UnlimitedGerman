@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0px"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:animateLayoutChanges="true"
+    android:background="@color/content_background"
+    android:id="@+id/artikelLinearlayout">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/stats" />
+
+    <TextView
+        android:text="Buch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/artikelWord"
+        android:layout_weight="1"
+        android:textIsSelectable="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="40dp"
+        android:textColor="#000"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:stretchColumns="*"
+        android:id="@+id/artikelTablelayout">
+
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="der"
+                android:id="@+id/btnDer"
+                style="@style/btnStyleOrange"
+                android:layout_margin="2dip" />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="die"
+                android:id="@+id/btnDie"
+                style="@style/btnStyleOrange"
+                android:layout_margin="2dip" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDas"
+                style="@style/btnStyleOrange"
+                android:layout_margin="2dip"
+                android:text="das" />
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:stretchColumns="*" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Schwierigkeit: "
+            android:id="@+id/artikelSchwierigkeit"
+            android:layout_alignBottom="@+id/numberSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnShowSolution"
+            android:textAlignment="center"
+            android:textColor="#000"
+            />
+        <SeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/artikelSeekSchiwerigkeit"
+            android:longClickable="false"
+            android:layout_below="@+id/btnShowSolution"
+            android:layout_toRightOf="@+id/textView"
+            android:labelFor="@+id/textViewSchwierigkeit"
+            android:layout_span="12" />
+
+    </TableRow>
+    </TableLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#0099CC"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/content_background" />
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="200sp"
+        android:id="@+id/artikelWebView"
+        android:visibility="gone" />
+
+</LinearLayout>
+
+

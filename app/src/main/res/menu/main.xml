@@ -1,0 +1,67 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.josepmir.germanincontext.MainActivity" >
+
+    <item android:id="@+id/help"
+        android:icon="@drawable/ic_action_help"
+        android:title="Hilfe"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/random_wiki"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Random Wiki Article"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_forward"
+    android:icon="@drawable/ic_action_forward"
+    android:title="Überspringen"
+    android:showAsAction="always"
+    app:showAsAction="always"/>
+<!--
+    <item android:id="@+id/favorite"
+        android:icon="@drawable/ic_action_important"
+        android:title="Favorit"
+        android:showAsAction="always"
+        app:showAsAction="always"/>-->
+    <item android:id="@+id/repeat"
+        android:title="Repeat"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/text1"
+        android:title="Text1"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/text2"
+        android:title="Text2"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/text3"
+        android:title="Text3 Demo"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/text4"
+        android:title="Text4 Demo"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/random_stupidedia"
+        android:title="*Random Stupidedia"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/custom_wiki"
+        android:title="*Specify Wiki Article"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/custom_text"
+        android:title="*Get from Clipboard"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/open_in_browser"
+        android:title="*Open in Browser"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

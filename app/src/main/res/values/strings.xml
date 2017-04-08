@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Application</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="NEED_PAID_VERSION">You need to update to the FULL version to practice with more texts.</string>
+
+
+    <string-array name="sections">
+        <item>Deklination</item>
+        <item>Adjektiven</item>
+        <item>Zahlen</item>
+        <item>DerDieDas</item>
+        <item>App bewerten</item>
+        <item>FULL VERSION</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+</resources>

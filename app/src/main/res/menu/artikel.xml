@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.josepmir.germanincontext.MainActivity" >
+
+    <item android:id="@+id/artikelHelp"
+        android:icon="@drawable/ic_action_help"
+        android:title="Hilfe"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/artikelForward"
+    android:icon="@drawable/ic_action_forward"
+    android:title="Überspringen"
+    android:showAsAction="always"
+    app:showAsAction="always"/>
+
+    <item android:id="@+id/artikelFavorite"
+        android:icon="@drawable/ic_action_important"
+        android:title="Favorit"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+</menu>
